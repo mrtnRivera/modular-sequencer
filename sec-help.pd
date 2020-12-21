@@ -1,0 +1,65 @@
+#N canvas -1726 289 843 733 12;
+#X obj 538 289 sec;
+#X obj 23 617 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 159 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 422 cnv 1 400 30 empty empty INPUTS: 20 12 0 14 -158136 -262144
+0;
+#X text 21 47 The Modular Sequencer is a simple abstraction for creating
+rhytmic patterns. It can output MIDI notes or in-patch bangs.;
+#X text 20 224 steps - Set the number of steps for the sequence. min:
+1 \, max: 32, f 67;
+#X text 20 247 ms - Time interval between events in milliseconds.,
+f 51;
+#X text 20 270 note - Change every MIDI note out in the sequence to
+a given note., f 67;
+#X text 20 293 rand - Create a random rhytmic pattern \, MIDI notes
+stay the same., f 66;
+#X text 20 316 ch - Set the MIDI channel for sending notes.;
+#X text 20 339 MIDI toggle - Interrup MIDI output in this object.;
+#X text 20 201 Main toggle - Turn the sequence On or Off;
+#X text 20 362 Note toggles - Activate a MIDI and bang event in the
+sequence., f 63;
+#X text 20 385 MIDI note values - Set a MIDI note for each sequence
+event.;
+#X text 22 505 ms - Set the time interval between events in milliseconds.
+;
+#X text 22 528 Tempo - Set the time interval between events in bpm.
+, f 69;
+#X text 22 556 Note - Set the MIDI note for each step;
+#X text 22 586 Random - A bang creates a random rhytmic pattern.;
+#X text 22 458 On/Off - A bang (or number) sets the toggle to On if
+it's Off and the other way around., f 92;
+#X text 26 653 Outlets 1 to 8 - Outputs a bang when the corresponding
+step is on and the sequence is running., f 95;
+#X text 26 688 Outlet 9 - Outputs a bang when the sequence is running
+and any given step is on., f 83;
+#X obj 538 56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 536 35 On/Off;
+#X floatatom 554 96 5 0 0 0 - - -;
+#X text 552 75 Steps;
+#X floatatom 579 140 5 0 0 0 - - -;
+#X text 576 119 Time in ms;
+#X floatatom 613 185 5 0 0 0 - - -;
+#X text 611 164 Time in bpm;
+#X floatatom 661 214 5 0 0 0 - - -;
+#X text 663 193 Set MIDI notes;
+#X obj 711 257 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 708 222 Random pattern;
+#X text 22 481 Steps - Set the nomber of steps in the sequence., f
+70;
+#X obj 717 399 bng 25 100 50 0 empty empty empty 17 7 0 10 -262144
+-258113 -1;
+#X obj 20 17 cnv 15 400 30 empty empty THE_MODULAR_SEQUENCER 20 12
+0 14 -150893 -262144 0;
+#X text 824 706 .;
+#X connect 0 8 34 0;
+#X connect 21 0 0 0;
+#X connect 23 0 0 1;
+#X connect 25 0 0 2;
+#X connect 27 0 0 3;
+#X connect 29 0 0 4;
+#X connect 31 0 0 5;
