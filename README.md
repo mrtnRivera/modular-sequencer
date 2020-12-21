@@ -3,7 +3,7 @@ A simple Pure Data sequencer design for modularity. In patch bangs and MIDI outp
 
 The Modular Sequencer is a simple abstraction for creating rhythmic patterns. It can output MIDI notes or in-patch bangs.
 
-##Controls
+## Controls
 
 * On/Off toggle - Turn the sequence On or Off.
 * steps - Set the number of steps for the sequence. min: 1, max: 32
