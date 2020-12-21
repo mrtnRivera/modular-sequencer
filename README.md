@@ -1,6 +1,5 @@
-# modular-sequencer
-A simple Pure Data sequencer design for modularity. In patch bangs and MIDI output.
-
+# The Modular Sequencer
+A simple Pure Data sequencer designed for modularity.
 The Modular Sequencer is a simple abstraction for creating rhythmic patterns. It can output MIDI notes or in-patch bangs.
 
 ## Controls
