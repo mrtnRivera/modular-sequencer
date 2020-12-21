@@ -3,22 +3,22 @@
 #X obj 104 106 tgl 25 0 empty empty empty 17 7 0 10 -262144 -258113
 -1 0 1;
 #X obj 222 53 % 8;
-#X obj 104 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 124 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 144 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 164 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 184 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 204 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 224 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 244 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 104 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -258113
+-1 0 1;
+#X obj 124 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -258113
+-1 1 1;
+#X obj 144 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -258113
+-1 1 1;
+#X obj 164 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -258113
+-1 1 1;
+#X obj 184 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -258113
+-1 1 1;
+#X obj 204 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -258113
+-1 1 1;
+#X obj 224 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -258113
+-1 1 1;
+#X obj 244 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -258113
+-1 1 1;
 #X floatatom 104 155 3 0 127 0 - - -;
 #X floatatom 124 155 3 0 127 0 - - -;
 #X floatatom 144 155 3 0 127 0 - - -;
@@ -79,8 +79,8 @@
 #X obj 345 375 outlet;
 #X obj 394 375 outlet;
 #X obj 56 148 sel 0;
-#X obj 279 169 tgl 15 1 empty empty MIDI 0 -7 0 8 -262144 -1 -1 1 1
-;
+#X obj 279 169 tgl 15 1 empty empty MIDI 0 -7 0 8 -262144 -258113 -1
+1 1;
 #X obj 97 299 spigot;
 #X obj 141 299 spigot;
 #X floatatom 277 141 3 0 16 2 ch. - -;
