@@ -1,4 +1,4 @@
-#N canvas -1584 321 604 531 10;
+#N canvas -891 176 604 531 10;
 #X obj 222 6 metro 500;
 #X obj 104 106 tgl 25 0 empty empty empty 17 7 0 10 -262144 -258113
 -1 0 1;
@@ -122,14 +122,15 @@
 #X connect 9 0 10 0;
 #X restore 400 142 pd random_sec;
 #X obj 400 167 unpack 0 0 0 0 0 0 0 0;
-#X obj 459 10 inlet random;
+#X obj 439 10 inlet random;
 #X obj 67 25 inlet steps;
 #X obj 139 25 inlet ms;
-#X obj 298 52 /;
-#X msg 298 31 60000 \$1;
-#X obj 298 10 inlet tempo;
-#X obj 388 10 inlet note;
-#X obj 323 52 / 2;
+#X obj 288 52 /;
+#X msg 288 31 60000 \$1;
+#X obj 288 10 inlet tempo;
+#X obj 368 10 inlet note;
+#X obj 313 52 / 2;
+#X obj 519 10 inlet channel;
 #X connect 0 0 69 0;
 #X connect 1 0 0 0;
 #X connect 1 0 62 0;
@@ -249,4 +250,5 @@
 #X connect 80 0 79 0;
 #X connect 81 0 19 0;
 #X connect 82 0 40 0;
+#X connect 83 0 66 0;
 #X coords 0 -1 1 1 205 90 2 100 100;

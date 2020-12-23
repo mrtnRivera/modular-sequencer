@@ -1,63 +1,66 @@
 #N canvas -1735 163 843 733 12;
 #X obj 23 587 cnv 15 400 30 empty empty OUTLETS: 20 12 0 14 -158136
 -262144 0;
-#X obj 20 129 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+#X obj 20 109 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
 -262144 0;
-#X obj 19 392 cnv 1 400 30 empty empty INLETS: 20 12 0 14 -158136 -262144
+#X obj 19 372 cnv 1 400 30 empty empty INLETS: 20 12 0 14 -158136 -262144
 0;
-#X text 20 194 steps - Set the number of steps for the sequence. min:
+#X text 20 174 steps - Set the number of steps for the sequence. min:
 1 \, max: 32, f 67;
-#X text 20 217 ms - Time interval between events in milliseconds.,
+#X text 20 197 ms - Time interval between events in milliseconds.,
 f 51;
-#X text 20 286 ch - Set the MIDI channel for sending notes.;
-#X text 20 355 MIDI note values - Set a MIDI note for each sequence
+#X text 20 266 ch - Set the MIDI channel for sending notes.;
+#X text 20 335 MIDI note values - Set a MIDI note for each sequence
 event.;
-#X text 22 475 ms - Set the time interval between events in milliseconds.
+#X text 22 455 ms - Set the time interval between events in milliseconds.
 ;
-#X text 22 498 Tempo - Set the time interval between events in bpm.
+#X text 22 478 Tempo - Set the time interval between events in bpm.
 , f 69;
-#X text 22 428 On/Off - A bang (or number) sets the toggle to On if
+#X text 22 408 On/Off - A bang (or number) sets the toggle to On if
 it's Off and the other way around., f 92;
 #X text 26 623 Outlets 1 to 8 - Outputs a bang when the corresponding
 step is on and the sequence is running., f 95;
 #X text 26 658 Outlet 9 - Outputs a bang when the sequence is running
 and any given step is on., f 83;
-#X obj 551 56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 491 56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X text 549 35 On/Off;
-#X floatatom 567 96 5 0 0 0 - - -;
-#X text 565 75 Steps;
-#X floatatom 592 140 5 0 0 0 - - -;
-#X text 589 119 Time in ms;
-#X floatatom 626 185 5 0 0 0 - - -;
-#X floatatom 674 214 5 0 0 0 - - -;
-#X text 676 193 Set MIDI notes;
-#X obj 724 251 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X text 489 35 On/Off;
+#X floatatom 517 87 5 0 0 0 - - -;
+#X text 515 66 Steps;
+#X floatatom 552 130 5 0 0 0 - - -;
+#X text 549 109 Time in ms;
+#X floatatom 601 155 5 0 0 0 - - -;
+#X floatatom 633 195 5 0 0 0 - - -;
+#X text 631 174 Set MIDI notes;
+#X obj 675 229 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X text 721 231 Random pattern;
-#X obj 730 399 bng 25 100 50 0 empty empty empty 17 7 0 10 -262144
+#X text 672 209 Random pattern;
+#X obj 713 401 bng 25 100 50 0 empty empty empty 17 7 0 10 -262144
 -258113 -1;
 #X obj 20 17 cnv 15 400 30 empty empty THE_MODULAR_SEQUENCER 20 12
 0 14 -150893 -262144 0;
-#X text 824 706 .;
-#X obj 551 289 mod_seq;
+#X text 802 706 .;
+#X obj 549 289 mod_seq;
 #X text 21 47 The Modular Sequencer is a simple abstraction for creating
 rhythmic patterns. It can output MIDI notes or in-patch bangs.;
-#X text 20 171 On/Off toggle - Turn the sequence On or Off.;
-#X text 20 240 note - Change every MIDI note in the sequence to a given
+#X text 20 151 On/Off toggle - Turn the sequence On or Off.;
+#X text 20 220 note - Change every MIDI note in the sequence to a given
 note., f 67;
-#X text 20 263 rand - Create a random rhythmic pattern \, MIDI notes
+#X text 20 243 rand - Create a random rhythmic pattern \, MIDI notes
 stay the same., f 66;
-#X text 20 309 MIDI toggle - Toggle MIDI output in this object.;
-#X text 20 332 Note toggles - Activate a MIDI note and bang event in
+#X text 20 289 MIDI toggle - Toggle MIDI output in this object.;
+#X text 20 312 Note toggles - Activate a MIDI note and bang event in
 the sequence., f 70;
-#X text 22 451 Steps - Set the number of steps in the sequence., f
+#X text 22 431 Steps - Set the number of steps in the sequence., f
 70;
-#X text 22 526 Note - Set the MIDI note for each step.;
-#X text 22 556 Random - A bang creates a random rhythmic pattern.;
+#X text 22 506 Note - Set the MIDI note for each step.;
+#X text 22 532 Random - A bang creates a random rhythmic pattern.;
 #X text 26 698 Github repo: https://github.com/mrtnRivera/modular-sequencer
 , f 83;
-#X text 624 164 Time in bpm (steps are 8ths);
+#X text 599 134 Time in bpm (steps are 8ths);
+#X floatatom 709 252 5 0 0 0 - - -;
+#X text 700 232 Set MIDI channel;
+#X text 22 560 MIDI Channel - Set the MIDI channel.;
 #X connect 12 0 26 0;
 #X connect 14 0 26 1;
 #X connect 16 0 26 2;
@@ -65,3 +68,4 @@ the sequence., f 70;
 #X connect 19 0 26 4;
 #X connect 21 0 26 5;
 #X connect 26 8 23 0;
+#X connect 38 0 26 6;
