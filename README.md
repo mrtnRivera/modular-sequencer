@@ -1,6 +1,8 @@
 # The Modular Sequencer
-A simple Pure Data sequencer designed for modularity.
+A Pure Data sequencer designed for modularity.
 The Modular Sequencer is a simple abstraction for creating rhythmic patterns. It can output MIDI notes or in-patch bangs.
+
+Just copy "mod_seq.pd" and "mod_seq-help.pd" where your patches can find them and create your sequencers with **[mod_seq]**.
 
 ## Controls
 
