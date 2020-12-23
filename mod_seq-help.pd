@@ -1,4 +1,4 @@
-#N canvas -1552 201 843 733 12;
+#N canvas -1735 163 843 733 12;
 #X obj 23 587 cnv 15 400 30 empty empty OUTLETS: 20 12 0 14 -158136
 -262144 0;
 #X obj 20 129 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
@@ -30,7 +30,6 @@ and any given step is on., f 83;
 #X floatatom 592 140 5 0 0 0 - - -;
 #X text 589 119 Time in ms;
 #X floatatom 626 185 5 0 0 0 - - -;
-#X text 624 164 Time in bpm;
 #X floatatom 674 214 5 0 0 0 - - -;
 #X text 676 193 Set MIDI notes;
 #X obj 724 251 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -58,10 +57,11 @@ the sequence., f 70;
 #X text 22 556 Random - A bang creates a random rhythmic pattern.;
 #X text 26 698 Github repo: https://github.com/mrtnRivera/modular-sequencer
 , f 83;
-#X connect 12 0 27 0;
-#X connect 14 0 27 1;
-#X connect 16 0 27 2;
-#X connect 18 0 27 3;
-#X connect 20 0 27 4;
-#X connect 22 0 27 5;
-#X connect 27 8 24 0;
+#X text 624 164 Time in bpm (steps are 8ths);
+#X connect 12 0 26 0;
+#X connect 14 0 26 1;
+#X connect 16 0 26 2;
+#X connect 18 0 26 3;
+#X connect 19 0 26 4;
+#X connect 21 0 26 5;
+#X connect 26 8 23 0;
