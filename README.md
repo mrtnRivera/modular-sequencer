@@ -1,4 +1,7 @@
 # The Modular Sequencer
+
+![Example](https://github.com/mrtnRivera/modular-sequencer/blob/main/img/mod_seq%20example.png)
+
 A Pure Data sequencer designed for modularity.
 The Modular Sequencer is a simple abstraction for creating rhythmic patterns. It can output MIDI notes or in-patch bangs.
 
