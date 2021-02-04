@@ -28,7 +28,7 @@ Just copy "mod_seq.pd" and "mod_seq-help.pd" where your patches can find them an
 * Tempo - Set the time interval between events in bpm.
 * Note - Set the MIDI note for each step.
 * Random - A bang creates a random rhythmic pattern.
-* MIDI Channel - Set the MIDI channel for note output.
+* MIDI Channel - Set the MIDI channel for sending notes.
 
 ## Outlets:
 
